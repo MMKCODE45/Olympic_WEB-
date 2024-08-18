@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World cup 2022</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="football.css" />
+    <style>
+      /* Additional styles for the back arrow container */
+      .back-arrow {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 9999;
+        cursor: pointer;
+      }
+
+      .back-arrow svg {
+        width: 40px;
+        height: 40px;
+        fill: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="back-arrow" onclick="goToAnotherPage()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-arrow-left-square"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+        />
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="match-tabs">
+        <li class="tab-link">
+          <a href="#match-date"></a>
+        </li>
+        <li class="tab-link">
+          <a href="#match-group"></a>
+        </li>
+      </div>
+
+      <h1 class="section-heading">Match By Date</h1>
+      <div class="matchs" id="match-date"></div>
+
+      <h1 class="section-heading">Match By Group</h1>
+      <div class="matchs-by-group" id="match-group"></div>
+    </div>
+    <div class="scroll-top">
+      <img src="arrow.png" alt="arrow" />
+    </div>
+    <script src="rugby.js"></script>
+    <script>
+      function goToAnotherPage() {
+        // Redirect to another page
+        window.location.href = "schedule.php";
+      }
+    </script>
+  </body>
+</html>

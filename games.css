@@ -1,0 +1,13 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* Reset and General Styles */
+
+/* Section Styles */
+section {
+  margin-top: 80px; /* Adjust this value to create space below the header */
+
+  padding-top: 20px; /* Example padding for space at the top of the section */
+  padding-left: 100px; /* Left padding */
+  padding-right: 100px; /* Right padding */
+}
